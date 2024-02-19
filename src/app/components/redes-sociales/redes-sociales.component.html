@@ -1,0 +1,14 @@
+<div class="iconos">
+    <div class="border-icon">
+        <a href="https://www.instagram.com/apoaa_olavarria/"><i class='bx bxl-instagram' style="color: white;"></i></a>
+    </div>
+    <div class="border-icon">
+        <i class='bx bxl-linkedin'style="color: white;" ></i>
+    </div>
+    <div class="border-icon">
+        <a href="https://www.facebook.com/protectoraapoaa"><i  class='bx bxl-facebook-circle' style="color: white;"></i></a>
+    </div>
+    <button (click)="login()" *ngIf="!isLogged">Login</button>
+    <button (click)="onLogOut()" *ngIf="isLogged">Cerrar sesion</button>
+
+</div>

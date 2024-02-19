@@ -1,0 +1,51 @@
+.descripcion-personal{
+    /* background-color: #0e184d; */
+    color: rgb(0, 0, 0);
+    /* padding-bottom: 20rem; */
+}
+div{
+    /* background-color: rgba(205, 166, 241, 0.858); */
+    text-align: center;
+    /* height: 250px; */
+    padding: 0px;
+    margin: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#nombre{
+    font-weight: bold;
+    margin-top: 30%;
+}
+.img-perfil{
+    margin-top: -14rem;
+}
+@media (min-width: 576px){
+    #fotoPerfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 3%;
+        top: 390px;
+    }
+}
+@media (max-width: 575px){
+    #fotoPerfil{
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 35%;
+        top: 550px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .img-perfil {
+        display: none;
+    }
+    .row {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } 
+}

@@ -1,0 +1,40 @@
+<div class="main-container">
+  <button type="button" class="btn btn-dark" routerLink="/nuevaExp" *ngIf="isLogged">
+    nueva Experiencia
+  </button>
+  <div class="heading">
+    <h2 class="fancy" style="--w: 50vw;--c: #160452;--b:4px;--g:-5px">Experiencia Laboral</h2>
+  </div>
+  <div class="contenedor-cards">
+    <div class="cards">
+      <div class="card card-1" *ngFor="let Experiencia of exp">
+        <div class="titulo-card">
+          <img src="../../../assets/img/luzAzul_c2.png" alt="" srcset="" class="img-card">
+          <h2 class="card__title">{{Experiencia.nombreE}}</h2>
+
+        </div>
+
+        <div>
+          <p>{{Experiencia.descripcionE}}</p>
+        </div>
+
+        <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editExperiencia/{{Experiencia.id}}">
+            <i class="bi bi-pencil-fill"></i>Editar
+          </button>
+        </td>
+        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)">
+            <i class="bi bi-trash"></i>Borrar
+          </button>
+        </td>
+        <!-- <p class="card__apply">
+          <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </p> -->
+      </div>
+    </div>
+    <!-- <div>
+      <img src="../../../assets/img/R.jpg" alt="" srcset="">
+    </div> -->
+    
+  </div>
+  
+</div>

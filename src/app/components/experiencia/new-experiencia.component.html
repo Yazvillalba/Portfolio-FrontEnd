@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE"> Nombre empresa</label>
+                    <input type="text" class="form-control" id="nombreE"  name="nombreE" [(ngModel)]="nombreE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE"> Descripcion de la tarea</label>
+                    <input type="text" class="form-control" id="descripcionE"  name="descripcionE" [(ngModel)]="descripcionE" required>
+                </div>
+                <div class="input_group">
+                    <label for="imagen">Seleccionar Imagen</label>
+                    <input type="file" class="form-control" id="imagen" name="imagen" (change)="onFileSelected($event)" accept="*/*" required>
+                    <!-- <input type="file" class="file-upload" onchange="console.log(event.target.files)"> -->
+        
+                  </div>
+                <button class="btn btn-primary" type="submit">Agregar Experiencia</button>
+            </form>
+        </div>
+    </div>
+</div>
