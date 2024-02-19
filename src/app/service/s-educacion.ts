@@ -10,7 +10,7 @@ import { Observable } from "rxjs";
     providedIn: 'root'
   })
 export class SEducacion {
-    URL = 'http://localhost:8080/educacion/'
+    URL = 'https://yvbackend.onrender.com/educacion/'
 
     constructor(private httpClient: HttpClient){}
 
