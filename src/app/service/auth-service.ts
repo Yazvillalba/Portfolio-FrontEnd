@@ -9,7 +9,8 @@ import { JwtDto } from "../model/jwt-dto";
     providedIn: 'root'
 })
 export class AuthService {
-    authURL = 'https://yvbackend.onrender.com/auth/';
+    // authURL = 'http://localhost:8080/auth/';
+    authURL = 'https://yvbackend-duo8.onrender.com/auth/';
     constructor(private httpClient: HttpClient){}
 
     public nuevo(nuevoUsuario: NuevoUsuario):Observable<any>{

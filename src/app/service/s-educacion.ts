@@ -10,8 +10,8 @@ import { Observable } from "rxjs";
     providedIn: 'root'
   })
 export class SEducacion {
-    URL = 'https://yvbackend.onrender.com/educacion/'
-
+     URL = 'https://yvbackend-duo8.onrender.com/educacion/'
+    // URL = 'http://localhost:8080/educacion/'
     constructor(private httpClient: HttpClient){}
 
     public lista(): Observable<Educacion[]> {
